@@ -1,0 +1,53 @@
+/* styles.css */
+.elemento {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
+
+body {
+    cursor: none; /* ocultar cursor padrão */
+    background-color: black;
+}
+
+
+/*Cursor*/
+/*Uma das formas de mudar o cursor só com css:
+/*
+body:hover {
+    cursor: url(Images/Cursor/Black-fixed/icons8-mouse-genérico-16.png), url(Images/Cursor/Black-fixed/icons8-mouse-genérico-24.png), auto;
+}
+#firstOption:hover {
+    cursor: url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-16.png), url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-24.png), pointer;
+}
+#secondOption:hover {
+    cursor: url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-16.png), url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-24.png), pointer;
+}
+#thirdOption:hover {
+    cursor: url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-16.png), url(Images/Cursor/Black-click/icons8-clique-esquerdo-do-mouse-24.png), pointer;
+}
+*/
+/*Cursor*/
+/*Cursor estilizado com css e js:*/
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.568);
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
